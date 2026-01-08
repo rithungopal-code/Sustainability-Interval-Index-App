@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sustainability Interval Index (SII)</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #f4f7f6;
+      color: #1f1f1f;
+    }
+    header {
+      background: linear-gradient(135deg, #0b3d2e, #145c45);
+      color: #ffffff;
+      padding: 4rem 10%;
+      text-align: center;
+    }
+    header h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    header p { font-size: 1.1rem; max-width: 800px; margin: 0 auto; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #0b3d2e;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      z-index: 1000;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    section {
+      padding: 4rem 10%;
+      min-height: 100vh;
+      background-color: #ffffff;
+    }
+
+    h2 {
+      color: #0b3d2e;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    ol li { margin-bottom: 1rem; }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .team-card {
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .team-card:hover { transform: translateY(-5px); }
+
+    .placeholder {
+      font-style: italic;
+      color: #555;
+    }
+
+    .team-photo {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 0.75rem 0;
+      object-fit: cover;
+    }
+
+    footer {
+      background: #0b3d2e;
+      color: #ffffff;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .image-row {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+    }
+
+    .app-image {
+      width: 45%;
+      max-width: 350px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sustainability Interval Index (SII)</h1>
+  <p>Conrad Challenge – Innovation Stage Project</p>
+  <p>
+    The Sustainability Interval Index (SII) is a novel computational framework that rethinks how
+    corporate sustainability is measured. This project introduces a more transparent,
+    uncertainty-aware, and actionable alternative to traditional sustainability scoring models.
+  </p>
+</header>
+
+<nav>
+  <a href="#about">Overview</a>
+  <a href="#innovation">Innovation</a>
+  <a href="#team">Team</a>
+  <a href="#impact">Impact</a>
+</nav>
+
+<section id="about">
+  <h2>Project Overview</h2>
+  <p>
+    Our goal was to address a fundamental flaw in existing sustainability ratings: the assumption that complex,
+    uncertain environmental data can be accurately represented by single, exact numbers.
+  </p>
+  <p>
+    SII replaces this assumption with an interval-based, fuzzy-logic-driven approach that produces
+    a <em>range</em> of sustainability outcomes and clearly identifies the factors that matter most.
+    This enables companies, investors, and policymakers to make better-informed decisions under
+    uncertainty.
+  </p>
+
+  <h2>Problem & Solution</h2>
+  <p>
+    Traditional sustainability ratings rely on exact values and rigid assumptions, despite
+    corporate environmental data often being incomplete, estimated, or subjective.
+  </p>
+  <p>
+    The Sustainability Interval Index (SII) addresses this challenge by modeling sustainability as
+    a <strong>range</strong> rather than a single number.
+  </p>
+</section>
+
+<section id="innovation">
+  <h2>Technical Innovation</h2>
+  <ol>
+    <li><strong>Interval-Based Inputs:</strong> Sustainability indicators are entered as ranges.</li>
+    <li><strong>Universal Normalization:</strong> Indicators are transformed to a [0,1] scale.</li>
+    <li><strong>Fuzzy Logic Evaluation:</strong> Indicators are mapped using triangular membership functions.</li>
+    <li><strong>Hierarchical Modeling:</strong> Indicators feed into higher-level sustainability concepts.</li>
+    <li><strong>Rule-Set Aggregation:</strong> Recursive fuzzy rules produce the final SII.</li>
+    <li><strong>Interval Optimization:</strong> Best- and worst-case sustainability outcomes are identified.</li>
+    <li><strong>Branch-and-Bound Optimization:</strong> Exact global results with computational efficiency.</li>
+    <li><strong>Impact Sensitivity Analysis:</strong> Identifies which indicators most affect the score.</li>
+  </ol>
+</section>
+
+<section id="team">
+  <h2>Team</h2>
+  <div class="team-grid">
+
+    <div class="team-card">
+      <h3>Rithun</h3>
+      <img src="rithun-photo.png" alt="Rithun portrait" class="team-photo">
+      <p class="placeholder">
+        Hey! I'm senior who is currently atteneding Burbank High School. I plan on dual majoring in mechanical engineering and computer engineering. I love playing tennis, hanging out with my friends, and trying out new food.
+      </p>
+    </div>
+
+    <div class="team-card">
+      <h3>Luke</h3>
+      <img src="luke-photo.png" alt="Luke portrait" class="team-photo">
+      <p class="placeholder">
+        Hey! I'm Junior who is currently attending Valley Christian High School. I plan on majoring in environmental engineering. I enjoy playing tennis and teaching it to younger children.
+      </p>
+    </div>
+
+    <div class="team-card">
+      <h3>Gautam</h3>
+      <img src="gautum-photo.png" alt="Gautum portrait" class="team-photo">
+      <p class="placeholder">Hi, I’m a senior at Cupertino High School who’s passionate about using computer science and machine learning to have real world impact. Working on this algorithm has been a perfect opportunity for me to fulfill this passion, along with other sustainability related projects. In my free time, I enjoy playing basketball and reading.</p>
+    </div>
+
+    <div class="team-card">
+      <h3>Karan</h3>
+      <img src="karan-photo.png" alt="Karan portrait" class="team-photo">
+      <p class="placeholder">
+        Hi! I'm senior who is currently attending Castro Valley High School. I plan on dual majoring in chemical engineering and public policy. I focus my time on helping my local community through various services and sleeping.
+      </p>
+    </div>
+
+    <div class="team-card">
+      <h3>Ryan</h3>
+      <img src="ryan-photo.png" alt="Ryan portrait" class="team-photo">
+      <p class="placeholder">
+        Hi! I’m a senior attending Miramonte High School in California. I’m passionate about sustainability and computer engineering. For fun, I run Track and Field and love to try new restaurants.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="impact">
+  <h2>Global Impact</h2>
+  <h3>GreenGrade App</h3>
+
+  <div class="image-row">
+    <img src="greengrade-input.png" class="app-image">
+    <img src="greengrade-sample.png" class="app-image">
+  </div>
+
+  <p>
+    SII is implemented in the <strong>Sustainability Interval Index App</strong> app, which evaluates corporate sustainability
+    using either manual inputs or automatically extracted data from annual reports.
+  </p>
+  <p>
+    Beyond scoring, <strong>Sustainability Interval Index App</strong> delivers actionable feedback by identifying which sustainability
+    indicators most constrain a company’s rating. This transforms sustainability analysis from a
+    static judgment into a practical roadmap for measurable improvement.
+  </p>
+</section>
+
+<footer>
+  <p>&copy; 2026 Cluster 4</p>
+</footer>
+
+</body>
+</html>
